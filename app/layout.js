@@ -1,11 +1,11 @@
 import Navbar from "../components/Navbar";
-
+import './globals.css'
 
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
             <body>
-                <h1>Mi página</h1>
+                
                 <Navbar />
                 {children}
             </body>
