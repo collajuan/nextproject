@@ -1,5 +1,8 @@
 import { NextResponse } from 'next/server'
 
+// console.log(process.env.TOKEN);
+
+
 export async function GET(){
     const res = await fetch('https://jsonplaceholder.typicode.com/posts')
     const data = await res.json()
