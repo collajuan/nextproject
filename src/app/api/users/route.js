@@ -1,9 +1,9 @@
 import { NextResponse } from 'next/server'
 
-export function GET(){
-    return NextResponse.json({
-        message: 'works!!'
-    })
+export async function GET(){
+    const res = await fetch('https://jsonplaceholder.typicode.com/posts')
+    const data = await res.json()
+    return NextResponse.json({data})
 }
 
 export function POST(){
